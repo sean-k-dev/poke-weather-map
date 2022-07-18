@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<title>Hoenn Weather Institute</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Open+Sans:wght@400;700&family=Playfair+Display&family=Racing+Sans+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/27-weather/sun-color.png">
+		<script src="https://kit.fontawesome.com/a10b503942.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header>
+			<section class="headerflex">
+				<div class="headerleft">
+				<img class="headerimgleft" src="img/castform.gif">
+				</div>
+				<div class="headercentre">
+					<h1>Hoenn Weather Institute</h1>
+					<img src="img/morning.png">
+					<span>ホウエン地方天気研究所</span>
+				</div>
+				<div class="headerright">
+				<img class="headerimgright" src="img/altaria.gif"
+				</div>
+			</section>
+		</header>
+
+		<main>
+			<h2>View Today's Weather across the Hoenn Region</h2>
+			<div class="mainblock">
+				<div class="mainblockleft">
+				</div>
+				<div class="mainblockinner">
+				<img src="img/hoennoras.png" usemap="#hoennmap" alt="https://archives.bulbagarden.net/media/upload/8/85/Hoenn_ORAS.png" width=1250 height=884>
+				<section id="tooltipBlock" class="tooltipblock">
+					<div class="tooltipblockheader">
+						<i id="closeTooltip" class="fa-solid fa-square-xmark fa-2x"></i>
+						<h3 id="tooltipHeading"></h3> 
+					</div>
+					<div>
+						<img src="#" id="tooltipImage"
+					</div>
+					<div class="tooltipcontent">
+						<div class="ttipcontentleft">
+							<img id="weatherForecast"><span id="weatherType"></span>
+						</div>
+						<div class="ttipcontentright">
+							<img id="tempGauge" src="img/temperature-thermometer.png">
+							<p><span id="currentTemp"></span><span id="currentScale"></span></p>
+							<button id="toggleCF" onclick="toggleCF()">Scale</button> 
+					</div>
+				</div>
+					<section>
+					<p id="ttipSubsection"></p>
+					</section>
+					<div class="lowerttip">
+						<section class="lowerttipleft">
+							<span>Background Music:</span>
+							<iframe id="musicSource" width="150" height="60" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</section>
+						<section class="lowerttipright">
+							<a id="linkToMore" href="#">More Info</a>
+						</section>
+					</div>
+				</section>
+				</div>
+				<div class="mainblockright"></div>
+			</div>
+			<map name="hoennmap" class="hoennImageMap">
+				<area shape="rect" title="Littleroot Town" id="littlerootTown" coords="237,615, 265,640" onclick="littlerootTown()">
+				<area shape="rect" title="Oldale Town" id="oldaleTown" coords="241,535, 269,563" onclick="oldaleTown()">
+				<area shape="rect" title="Petalburg City" id="petalburgCity" coords="144,530 187,579" onclick="petalburgCity()">
+				<area shape="rect" title="Rustboro City" id="petalburgCity" coords="71,354 136,459" onclick="rustboroCity()">
+				<area shape="rect" title="Dewford Town" id="dewfordTown" coords="119,759 186,826" onclick="dewfordTown()">
+				<area shape="rect" title="Slateport City" id="slateportCity" coords="354,545 435,637" onclick="slateportCity()">
+				<area shape="rect" title="Mauville City" id="mauvilleCity" coords="358,312 425,361" onclick="mauvilleCity()">
+				<area shape="rect" title="Verdanturf Town" id="verdanturfTown" coords="226,313 279,354" onclick="verdanturfTown()">
+				<area shape="rect" title="Lavaridge Town" id="lavaridgeTown" coords="280,174 313,210" onclick="lavaridgeTown()">
+				<area shape="rect" title="Mt. Chimney" id="mtChimney" coords="273,90 369,173" onclick="mtChimney()">
+				<area shape="rect" title="Desert" id="hoennDesert" coords="407,101 455,236" onclick="hoennDesert()">
+				<area shape="rect" title="Fallarbor Town" id="fallarborTown" coords="258,60 299,89" onclick="fallarborTown()">
+				<area shape="rect" title="Weather Institute" id="weatherInstitute" coords="457,128 488,159" onclick="weatherInstitute()">
+				<area shape="rect" title="Fortree City" id="fortreeCity" coords="545,83 610,119" onclick="fortreeCity()">
+				<area shape="rect" title="Mt. Pyre" id="mtPyre" coords="734,231 796,296" onclick="mtPyre()">
+				<area shape="rect" title="Lilycove City" id="lilycoveCity" coords="807,168 917,250" onclick="lilycoveCity()">
+				<area shape="rect" title="Mossdeep City" id="mossdeepCity" coords="1042,168 1162,265" onclick="mossdeepCity()">
+				<area shape="rect" title="Sootopolis City" id="sootopolisCity" coords="914,353 989,433" onclick="sootopolisCity()">
+				<area shape="rect" title="Ever Grande City" id="everGrandeCity" coords="1147,312 1198,461" onclick="everGrandeCity()">
+				<area shape="rect" title="Pacifidlog Town" id="pacifidlogTown" coords="764,545 824,596" onclick="pacifidlogTown()">
+			</map>
+		</main>
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
